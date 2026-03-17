@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Idcard = () => {
+export const Idcard = ({name, email, gender , studentCode}) => {
   return (
     <div className="w-107.5 h-67.5 rounded-[20px] bg-[#88d8e3] flex items-center justify-center">
       <div className="w-90 h-60  flex flex-col">
@@ -14,22 +14,22 @@ export const Idcard = () => {
           </p>
         </div>
         <div className="w-full h-42.5 flex">
-          <div className="h-full w-60 flex flex-col justify-center items-start">
-            <div>
-              <p></p>
-              <p></p>
+          <div className="h-full w-60 flex flex-col justify-center items-start gap-2.5">
+            <div className="h-6.25 flex flex-col items-start gap-1.25 ml-2.5">
+              <p className="h-2.5 flex items-center text-[#00756f] font-semibold">Studies at</p>
+              <p className="h-2.5 flex items-center text-black font-medium">PINECONE</p>
             </div>
-            <div>
-              <p></p>
-              <p></p>
+            <div className="h-6.25 flex flex-col items-start gap-1.25 ml-2.5">
+              <p className="h-2.5 flex items-center text-[#00756f] font-semibold">Name</p>
+              <p className="h-2.5 flex items-center text-black font-medium">{name}</p>
             </div>
-            <div>
-              <p></p>
-              <p></p>
+            <div className="h-6.25 flex flex-col items-start gap-1.25 ml-2.5">
+              <p className="h-2.5 flex items-center text-[#00756f] font-semibold">Gender</p>
+              <p className="h-2.5 flex items-center text-black font-medium">{gender}</p>
             </div>
-            <div>
-              <p></p>
-              <p></p>
+            <div className="h-6.25 flex flex-col items-start gap-1.25 ml-2.5">
+              <p className="h-2.5 flex items-center text-[#00756f] font-semibold">E-mail</p>
+              <p className="h-2.5 flex items-center text-black font-medium">{email}</p>
             </div>
           </div>
           <div className="h-full w-30 flex flex-col">
@@ -39,7 +39,7 @@ export const Idcard = () => {
               alt=""
             />
             <p className="mt-1.5 text-[15px] text-black font-light flex justify-center">
-              26BS98744
+              {studentCode}
             </p>
           </div>
         </div>
