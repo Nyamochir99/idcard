@@ -139,6 +139,7 @@ const page = () => {
       {students.map((element, key) => {
         return (
           <Idcard
+            key={key}
             name={element.name}
             gender={element.gender}
             email={element.email}
